@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.bbt{
+    margin-bottom: 4px;
+    margin-top: 1px;
+    background-color: white;
+}
+.bt{
+    border-radius: 35px;
+    cursor: pointer;
+    padding: 8px 15px;
+}
+.bt:hover{
+    background-color: rgb(163, 163, 163);
+}
+.im{
+    margin-bottom: 6px;
+}
+.popup{
+    transform: translateY(-50%);
+    position: fixed;
+    top: 50%;
+    right: -350px;
+    width: 350px;
+    height: auto;
+    padding: 40px;
+    background-color: whitesmoke;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    transition: 0.5s;
+    z-index: 1;
+}
+.popup.active{
+    right: 0px;
+}
+.popup input[type="submit"]{
+    background-color: rgb(6, 6, 78);
+    color: white;
+    cursor: pointer;
+    height: 25px;
+    width: 100%;
+    text-align: center;
+    margin-top: 6px;
+    height: 45px;
+}
+.b{
+    display: block;
+    margin: 2px 0px;
+    padding: 4px;
+    cursor: pointer;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    height: 40px;
+}
+.h3{
+    margin-top: 2px;
+    margin-bottom: 15px;
+}
+.im{
+    margin-left: 20%;
+}
+.toggle{
+    position: absolute;
+    top: 0;
+    left: -48px;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    cursor: pointer;
+    background: rgb(10, 10, 94);
+}
+.toggle:before{
+    content:'\f003';
+    font-family: fontAwesome;
+    color: white;
+    font-size: 18px;
+}
+.toggle.active:before{
+    content: "\f00d";
+}
